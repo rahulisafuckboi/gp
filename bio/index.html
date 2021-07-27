@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="./css/bio-style.css">
+<body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104673978425413");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+<img class="phone" src="https://i.ibb.co/zb1Bvh3/nexus-white-800x1280.png" alt="Mobile Phone"/>
+<section class="app">
+  <div class="avatar"><img src="https://i.ibb.co/9WSssHP/logo-circle.png" alt="Avatar"/></div>
+  <h1>Hello There!</h1>
+  <ul>
+    <li><a href="https://wa.link/tpb5u3" target="_blank">Place Your Order Here</a></li>
+    <li><a href="https://facebook.com/miltonkidukanlko" target="_blank">See My Facebook Page</a></li>
+    <li><a href="https://instagram.com/miltonkidukan/" target="_blank">See My Instagram Page</a></li>
+  </ul>
+  <a class="author" href="https://www.instagram.com/parvashwani/" target="_blank">devloper @parvashwani</a>
+</section>
